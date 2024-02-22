@@ -9,6 +9,8 @@ Al usar el ejecutable puedes organizar los archivos de un directorio en diferent
 Escribe el siguiente comando en tu terminal para clonar el respositorio:
 + `git clone https://github.com/Ethan-Sarricolea/Files-organizier.git`
 
+Si no cuentas con git descargado o esta opción no funciona puedes descargar la carpeta comprimida en un archivo zip
+
 ## Uso
 
 1. Abre la terminal en el reposirotio clonado o dezplazate al directorio en la terminal con el siguiente comando:
