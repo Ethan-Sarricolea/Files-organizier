@@ -18,7 +18,8 @@ If you do not have git downloaded or this option does not work, you can download
 
 
 2. Run the executable file:
-    + `sorting.exe "path"`
+    + cmd: `sorting.exe "ruta"`
+    + PowerShell: `.\sorting.exe "ruta"`
 
     #### Note:
         The path must be enclosed in single or double quotes for the code to function correctly.

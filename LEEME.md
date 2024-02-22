@@ -17,7 +17,8 @@ Si no cuentas con git descargado o esta opción no funciona puedes descargar la 
     + `cd Files-organizier/bin`
 
 2. Inicia el ejecutable con el siguiente comando:
-    + `sorting.exe "ruta"`
+    + cmd: `sorting.exe "ruta"`
+    + PowerShell: `.\sorting.exe "ruta"`
 
     #### Nota:
         La ruta sebe colocarse entre comillas dobles o simples para el correcto funcionamiento.
