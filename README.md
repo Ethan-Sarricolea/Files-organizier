@@ -14,7 +14,7 @@ If you do not have git downloaded or this option does not work, you can download
 ## Use 
 
 1. Open terminal in cloned repository or move to directory in terminal whit the next command
-    + `cd Files-organizier/bin`
+    + `cd Files-organizier\bin`
 
 
 2. Run the executable file:

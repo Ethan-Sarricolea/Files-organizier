@@ -14,7 +14,7 @@ Si no cuentas con git descargado o esta opción no funciona puedes descargar la 
 ## Uso
 
 1. Abre la terminal en el reposirotio clonado o dezplazate al directorio en la terminal con el siguiente comando:
-    + `cd Files-organizier/bin`
+    + `cd Files-organizier\bin`
 
 2. Inicia el ejecutable con el siguiente comando:
     + cmd: `sorting.exe "ruta"`
