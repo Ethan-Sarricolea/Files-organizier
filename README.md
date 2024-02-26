@@ -29,5 +29,3 @@ If you do not have git downloaded or this option does not work, you can download
 If you have python in compiler in your device, you can execute a window to run the dart file with the next command:
 
 + `python capy_organizier\sort.py`
-
-###### **The dart files were created in a Dart course with the guidance and help of engineer Alejando Leyva, whose page I share: https://www.alejandro-leyva.com**
