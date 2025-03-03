@@ -21,7 +21,7 @@ Si no cuentas con git descargado o esta opción no funciona puedes descargar la 
     + PowerShell: `.\sorting.exe "ruta"`
 
     #### Nota:
-        La ruta sebe colocarse entre comillas dobles o simples para el correcto funcionamiento.
+        La ruta debe colocarse entre comillas dobles o simples para el correcto funcionamiento.
         Es posible que a la hora de organizar se genere un mensaje de error a pesar de no haber problemas.
 
 #### Extra
