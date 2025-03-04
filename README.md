@@ -1,31 +1,50 @@
-# Files organizier
+# File Organizer
 
 ## Description
 
-By using the executable you could organize the files in a directory into different folders according to their extension.
+Using the executable you can organize the files in a directory into different folders based on their extension.
 
-## Install
+## Download
 
-Run the next command in terminal:
-+ `git clone https://github.com/Ethan-Sarricolea/Files-organizier.git`
+Type the following command in your terminal to clone the repository:
 
-If you do not have git downloaded or this option does not work, you can download the compressed folder in a zip file
+```bash
+git clone https://github.com/Ethan-Sarricolea/Files-organizier.git
+```
 
-## Use 
+If you don't have git downloaded or this option doesn't work you can download the compressed folder in a zip file
 
-1. Open terminal in cloned repository or move to directory in terminal whit the next command
-    + `cd Files-organizier\bin`
+## Usage
 
+1. Open the terminal in the cloned repository or navigate to the directory in the terminal with the following command:
 
-2. Run the executable file:
-    + cmd: `sorting.exe "path"`
-    + PowerShell: `.\sorting.exe "path"`
+```bash
+cd File Organizer\bin
+```
 
-    #### Note:
-        The path must be enclosed in single or double quotes for the code to function correctly.
-        It is possible that an error message is generated when organizing even though there are no problems.
+2. Launch the executable with the following command:
++ cmd: 
+```bash
+sorting.exe "path"
+```
++ PowerShell: 
+```bash
+.\sorting.exe "path"
+```
+
+##### Note:
+The path must be placed in double or single quotes for proper operation.
+It is possible that when organizing an error message is generated even though there are no problems.
 
 #### Extra
-If you have python in compiler in your device, you can execute a window to run the dart file with the next command:
 
-+ `python capy_organizier\sort.py`
+If you have the python compiler on your device you can run the python window to start the dart file with the following command:
+
+```bash
+Python capy_organizier\sort.py
+```
+#### Note
+It is possible that an error will appear when organizing directories, I am still working on it.
+<br>
+
+###### **The dart files were created in the dart course taught by engineer Alejandro Leyva, whose page I share: https://www.alejandro-leyva.com**

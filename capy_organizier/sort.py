@@ -6,6 +6,7 @@ Author: Ethan Sarricolea
 import subprocess
 from tkinter import messagebox,Tk,Entry,Label,Button,font,filedialog,Frame
 
+
 def execute(arg1):
     dartPath = r"bin\sorting.dart"
     command = f'dart {dartPath} "{arg1}"'
@@ -19,7 +20,7 @@ def execute(arg1):
         except subprocess.CalledProcessError as e:
             messagebox.showerror("Capy organizier",
                                 f"An execution error occurred: {e}")
-#"""
+
 def select_dir():
     ruta = str(filedialog.askdirectory())
     userInput.insert("end",ruta)
@@ -61,4 +62,3 @@ Button(root,
        command=root.quit).place(x=200,y=150)
 msj = Label(root,text="Organization finished")
 root.mainloop()
-#"""

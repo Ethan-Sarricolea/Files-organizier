@@ -1,5 +1,11 @@
+/**
+ * Descripcion:
+ * Autor: @Ethan-Sarricolea
+ */
+
 import 'dart:io';
 
+// Lista de archivos por organización
 const extensionWord = [".doc", ".docx"];
 const extensionPDF = [".pdf"];
 const extensionExe = [".exe", ".bat"];
@@ -7,8 +13,10 @@ const extensionImages = [".jpeg", ".jpg", ".png", ".gif",".mp3",".wav",".mp4"];
 const extensionCompress = [".zip", ".rar", ".7zip", ".tar", ".tar.gz"];
 const extensionExcel = [".xlsx",".csv"];
 const extensionPresentations = [".pptx"];
-const folders = <String>["Word","Multimedia","Compressed","Pdf","Executables","Excel","Presentations","Other"];
+const folders = <String>["Word","Multimedia","Compressed","Pdf",
+                        "Executables","Excel","Presentations","Other"];
 
+// Mapa de carpetas donde se organizaran los archivos
 var extensionMap = {
   "Word":extensionWord,
   "Pdf": extensionPDF,
@@ -19,7 +27,12 @@ var extensionMap = {
   "Presentations": extensionPresentations
 };
 
-// leer los archivos de una carpeta y/o subcarpetas
+/**
+ * Description: Este metodo lee los archivos en un directorio o subdirectorios
+ *     Y los retorna como lista de Strings
+ * @param pathDir - Ruta de directorio principal
+ * @[bool recurive] - Recursividad en la lectura
+ */
 
 List<String> readFiles(String pathDir, [bool recursive = false]) {
   var paths = <String>[];
@@ -34,8 +47,9 @@ List<String> readFiles(String pathDir, [bool recursive = false]) {
 }
 
 /**
- *  Crea las carpetas según la lista de carpetas
- *  Si alguna carpeta ya existe omite la creación
+ *  Description: Se encarga de crear las carpetas segun
+ *      Según la lista definida de carpetas (folder).
+ *  Si alguna carpeta ya existe omite la creación.
  */
 
 bool createFolders(String pathDir){
@@ -49,7 +63,10 @@ bool createFolders(String pathDir){
     return true;
 }
 
-// Mueve los archivos cambiando el path original por el de la nueva carpeta
+/**
+ * Descripción: Mueve los archivos,
+ *     cambiando su path original por el nuevo dentro de la carpeta
+ */
 
 bool moveFile(String pathBase, String pathNewDir){
     
@@ -62,8 +79,8 @@ bool moveFile(String pathBase, String pathNewDir){
 }
 
 /**
- * Obtiene la extensión y la compara con la lista de extensiones
- * Si no se encuentra en la lista mete el archivo en la carpeta otros
+ * Description: Obtiene la extensión y la compara con la lista de extensiones
+ *     Si no se encuentra en la lista mete el archivo en la carpeta otros
  */
 
 String getNameFolder(String path){
@@ -81,19 +98,3 @@ String getNameFolder(String path){
 
     return folder;
 }
-
-/*
-//  Test main
-
-void main(List<String> args) {
-  String pathDir = "C:\\Users\\usuario\\Documents\\prueba";
-  final paths = readFiles(pathDir);
-  createFolders(pathDir);
-
-  for(final path in paths){
-    moveFile(
-      path, 
-      pathDir+Platform.pathSeparator+ getNameFolder(path));
-  }
-}
-*/
