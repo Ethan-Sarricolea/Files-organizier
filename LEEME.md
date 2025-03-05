@@ -40,9 +40,13 @@ Si no cuentas con git descargado o esta opción no funciona puedes descargar la 
 
 Si cuentas con el compilador de python en tu dispositivo puedes ejecutar la ventana de python para iniciar el archivo de dart con el siguiente comando:
 
-+ ```bash
-    python capy_organizier\sort.py
-  ```
+```bash
+python capy_organizier\sort.py
+```
+
+O crear un acceso directo del ejecutable `Capy organizier.exe` para utilizar la interfaz desde donde gustes.
+
+Nota: Es posible que Windows Defender lo reconozca como un virs.
 
 #### Nota
 Es posible que se muestre un error a la hora de organizar los directorios, aun estoy en ello.

@@ -43,6 +43,11 @@ If you have the python compiler on your device you can run the python window to 
 ```bash
 Python capy_organizier\sort.py
 ```
+
+Or create a shortcut of the `Capy organizier.exe` executable to use the interface from wherever you like.
+
+Note: Windows Defender may recognize this as a virus.
+
 #### Note
 It is possible that an error will appear when organizing directories, I am still working on it.
 <br>
