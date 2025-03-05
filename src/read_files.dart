@@ -9,7 +9,7 @@ import 'dart:io';
 const extensionWord = [".doc", ".docx"];
 const extensionPDF = [".pdf"];
 const extensionExe = [".exe", ".bat"];
-const extensionImages = [".jpeg", ".jpg", ".png", ".gif",".mp3",".wav",".mp4"];
+const extensionImages = [".jpeg", ".jpg", ".png", ".gif",".mp3",".wav",".mp4", ".ico"];
 const extensionCompress = [".zip", ".rar", ".7zip", ".tar", ".tar.gz"];
 const extensionExcel = [".xlsx",".csv"];
 const extensionPresentations = [".pptx"];
@@ -67,15 +67,16 @@ bool createFolders(String pathDir){
  * Descripción: Mueve los archivos,
  *     cambiando su path original por el nuevo dentro de la carpeta
  */
+  void moveFile(String pathBase, String pathNewDir) async{
+    // print("$pathBase -> $pathNewDir${Platform.pathSeparator}$name_file");
 
-bool moveFile(String pathBase, String pathNewDir){
-    
-    String name_file = pathBase.split(Platform.pathSeparator).last;
-
-    print("$pathBase -> $pathNewDir${Platform.pathSeparator}$name_file");
-    File(pathBase).rename("$pathNewDir${Platform.pathSeparator}$name_file");
-
-    return true;
+    // Si path es un folder -> pass
+    if (await FileSystemEntity.isDirectory(pathBase)){
+      return;
+    } else {
+      String name_file = pathBase.split(Platform.pathSeparator).last;
+      File(pathBase).rename("$pathNewDir${Platform.pathSeparator}$name_file");
+    }
 }
 
 /**
